@@ -19,9 +19,9 @@ $dark-blue: hsl(218, 44%, 22%);
   color: hsl(228, 45%, 44%);
 }
 
-// :root {
-//   font-size: 62.5%;
-// }
+:root {
+  font-size: 62.5%;
+}
 
 body {
   display: flex;
@@ -31,48 +31,57 @@ body {
   align-items: center;
   font-family: "Outfit", sans-serif;
   background-color: $light-gray;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .qr-code {
-  max-width: 320px;
-  padding: 16px;
+  max-width: 32rem;
+  padding: 1.6rem;
   background-color: $white;
-  border-radius: 15px;
+  border-radius: 1.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2.4rem;
 
-  &__image-container {
-    margin-bottom: 10px;
-  }
+  // &__image-container {
+
+  // }
 
   &__image {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 1.2rem;
   }
 
   &__description {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 167px;
+    justify-content: flex-start;
+    min-height: 15.3rem;
+    gap: 1.6rem;
   }
 
   &__title {
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 700;
     text-align: center;
     color: $dark-blue;
-    padding: 0 15px 0 15px;
-    margin-bottom: 7px;
+    padding: 0 1.5rem 0 1.5rem;
   }
 
   &__text {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: $grayish-blue;
     text-align: center;
-    padding: 0 15px 0 15px;
-    margin-bottom: 7px;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 34em) {
+  .qr-code {
+    margin: 0 1rem 0 1rem;
   }
 }

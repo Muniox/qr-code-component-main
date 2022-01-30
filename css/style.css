@@ -14,6 +14,10 @@
   color: #3e52a3;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,25 +35,32 @@ body {
           align-items: center;
   font-family: "Outfit", sans-serif;
   background-color: #d6e2f0;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .qr-code {
-  max-width: 320px;
-  padding: 16px;
+  max-width: 32rem;
+  padding: 1.6rem;
   background-color: white;
-  border-radius: 15px;
-}
-
-.qr-code__image-container {
-  margin-bottom: 10px;
+  border-radius: 1.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2.4rem;
 }
 
 .qr-code__image {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 1.2rem;
 }
 
 .qr-code__description {
@@ -60,27 +71,32 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  min-height: 167px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 15.3rem;
+  gap: 1.6rem;
 }
 
 .qr-code__title {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 700;
   text-align: center;
   color: #1f3251;
-  padding: 0 15px 0 15px;
-  margin-bottom: 7px;
+  padding: 0 1.5rem 0 1.5rem;
 }
 
 .qr-code__text {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #7b879d;
   text-align: center;
-  padding: 0 15px 0 15px;
-  margin-bottom: 7px;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+@media screen and (max-width: 34em) {
+  .qr-code {
+    margin: 0 1rem 0 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
